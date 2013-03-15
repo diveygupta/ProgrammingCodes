@@ -1,0 +1,50 @@
+import java.util.*;
+
+public class Test {
+
+    public static void main(String[] args) {
+    	List<String> list1=new LinkedList<String>();
+        list1.add("a");
+        list1.add("b");
+        list1.add("c");
+        list1.add("d");
+       	
+       	List<String> list2=new LinkedList<String>();
+       	list2.add("b");
+        	list2.add("c");
+        	
+        	list1.addAll(list2);
+        	list2=null;
+        	printList(list1);
+        	remove(list1,2,4);
+        	printList(list1);
+        	reverse(list1);
+        	
+        	
+	}
+
+	private static void reverse(List<String> list1) {
+		// TODO Auto-generated method stub
+		ListIterator<String> it=list1.listIterator(list1.size());
+		while(it.hasPrevious())
+		{
+			System.out.print(it.previous() +"\t");
+		}
+		System.out.println();
+	}
+
+	private static void remove(List<String> list1, int i, int j) {
+		// TODO Auto-generated method stub
+		list1.subList(i, j).clear();
+	}
+
+	private static void printList(List<String> list1) {
+		// TODO Auto-generated method stub
+				ListIterator<String> it=list1.listIterator(0);
+				while(it.hasNext())
+				{
+					System.out.print(it.next() +"\t");
+				}
+				System.out.println();
+	}
+}

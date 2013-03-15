@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class Test {
+
+    public static void main(String[] args) {
+    	
+    	String[] st={"a","b","c"};
+    	//convert array2list
+    	LinkedList<String> list1=new LinkedList<String>(Arrays.asList(st));
+        list1.add("d");
+        list1.add("e");
+        list1.addFirst("top");
+        
+       		//convert list2array
+        st=list1.toArray(new String[list1.size()]);
+        
+        for(String i:st)
+        {
+        	System.out.print(i+"\t");
+        }
+        	
+	}
+}
