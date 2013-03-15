@@ -1,0 +1,31 @@
+import java.util.*;
+
+public class Test {
+
+    public static void main(String[] args) {
+    	
+    	Character[] ray={'a','b','c'};
+    	//convert array2list
+    	List<Character> list1=Arrays.asList(ray);
+        
+        
+       		//reverse list
+        Collections.reverse(list1);
+        
+        for(Character i:ray)
+        {
+        	System.out.print(i+"\t");
+        	
+        }
+        System.out.println();
+        
+        //Character[] newray=new Character[3];
+        List<Character> list2=new ArrayList<Character>();
+        Collections.addAll(list2, ray);
+        for(Character i:list2)
+        {
+        	System.out.print(i+"\t");
+        }
+        
+	}
+}

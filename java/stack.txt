@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class Test {
+
+    public static void main(String[] args) {
+    	
+    	Stack<String> st=new Stack<String>();
+    	
+    	st.push("a");
+    	st.push("b");
+    	st.push("c");
+
+    printStack(st);
+    System.out.println();
+    st.pop();
+    printStack(st);
+    }
+
+	private static void printStack(Stack<String> st) {
+		// TODO Auto-generated method stub
+		if(st.isEmpty())
+			System.out.println("stack is empty");
+		else
+			System.out.println(st);
+	}
+
+
+}
