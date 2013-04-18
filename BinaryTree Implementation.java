@@ -13,7 +13,7 @@ public class Node {
    }
    
    public Node getLeft(){
-	   return right;
+	   return left;
    }
    
    public int getValue()

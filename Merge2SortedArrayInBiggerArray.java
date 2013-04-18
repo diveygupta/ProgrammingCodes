@@ -1,6 +1,6 @@
 import java.util.*;
 
-//i assume that size of 2 arrays is not given
+//It is assumed that size of 2 arrays is not given
 public class Test{
 
 	private  static void MergeTwoArrayInOne(int[] bigArray,int[] smallArray)

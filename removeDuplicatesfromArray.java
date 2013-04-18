@@ -21,15 +21,10 @@ public class Test{
 
 		int[] arr={4,5,4,6,1,32,64,32};
 		ArrayList<Integer> list=removeDuplicates(arr);
-		
 		Iterator<Integer> it=list.iterator();
 		while(it.hasNext())
-		{
 			System.out.print(it.next()+"\t");
-		}
-	
-	
-											}			
+	}			
 		}
 
 	
