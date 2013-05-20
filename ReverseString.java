@@ -2,7 +2,6 @@ public String ReverseString(String s)
 {
 	int len=s.length();
 	char temp;
-	System.out.println(s);
 	char[] charArray = s.toCharArray();
 	
 	for(int i=0;i<len/2;i++)
