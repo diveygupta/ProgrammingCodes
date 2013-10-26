@@ -15,3 +15,19 @@ int k;
 
 return 0;
 }
+
+//method2
+int decimal_binary(int n) 
+
+{ 
+	int rem, i=1, binary=0; 
+	while (n!=0) 
+	{ 
+		rem=n%2;
+		n/=2;
+		binary+=rem*i; 
+		i*=10; 
+		}
+		return binary;
+}
+

@@ -51,11 +51,7 @@ public class Test{
 
 		String[] str={"abc","def","cba","dfe","def","fed","sfe","werwe","rr","fes"};
 		AnagramsofStringTogether(str);
-		 
-		 
-		
-	
-
+		 	
 	}			
 		}
 
