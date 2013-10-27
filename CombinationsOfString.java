@@ -12,10 +12,13 @@ public class Test {
 	private static void Combination(String prefix,String str) {
 		// TODO Auto-generated method stub
 		int len=str.length();
+		
+		if(prefix.length()>0)
 		System.out.println(prefix);
+		
 		for(int i=0;i<len;i++)
 		{
-			Combination(prefix+str.charAt(i), str.substring(i+1));
+			Combination(prefix+str.charAt(i), str.substring(i+1,len));
 		}
 		
 	}

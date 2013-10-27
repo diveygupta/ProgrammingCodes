@@ -12,18 +12,26 @@ Node PreorderTraversal1(Node root)
 	}
 
 //without recursion
-Node PreorderTraversal2(Node root)
-{
-	if(root==null) return null;
-	Stack <Node> st=new Stack<Node>();
-	st.push(root);
-	while(st.size()>0)
+void PreOrderTraversal2(Node root)
 	{
-	System.out.println(st.pop().value);
-	if(root.getRight!=null)//right is pushed first so that its popped after left
-	st.push(root.getRight());
-	if(root.getLeft!=null)
-	st.push(root.getLeft());
+		if(root==null) return;
+		
+		Stack<Node> st=new Stack<Node>();
+		
+		st.push(root);
+		
+		while(st.size()>0)
+		{
+			Node n=st.pop();
+			System.out.println(n.getValue());
+			if(root.getRight()!=null)
+			st.push(n.getRight());
+			if(root.getLeft()!=null)
+			st.push(n.getLeft());
+				
+			
+		}
+		
+		
+		
 	}
-	}
-}
