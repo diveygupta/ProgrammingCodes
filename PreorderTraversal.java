@@ -20,7 +20,7 @@ void PreOrderTraversal2(Node root)
 		
 		st.push(root);
 		
-		while(st.size()>0)
+		while(!st.isEmpty())
 		{
 			Node n=st.pop();
 			System.out.println(n.getValue());

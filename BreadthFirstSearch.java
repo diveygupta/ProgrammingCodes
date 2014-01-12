@@ -19,3 +19,30 @@ public void BFS()
 	//Clear visited property of nodes
 	clearNodes();
 }
+
+
+//////////////algo for BT
+	 public void BFS2()
+	 { 
+	 	Queue q = new LinkedList();
+	 	Node item;
+		if(root == null)
+			return;
+	 		q.add(root);
+	 		while(!q.isEmpty() )
+	 		{
+	 			item = (Node)q.remove();
+	 			System.out.println(item);
+	 			if(item != null)
+	 			{
+	 				if(item.left != null)
+	 				{
+	 					q.add(item.left);
+	 				}
+	 				if(item.right != null)
+	 				{
+	 					q.add(item.right);
+	 				}
+	 			}
+	 		}
+	 }

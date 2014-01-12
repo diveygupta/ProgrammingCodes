@@ -37,10 +37,10 @@ public class Test{
 			current++;
 		}
 	
-		//copy rem elements
-		int rem=middle-left;
-		for(int i=0;i<=rem;i++)
-			array[current+i]=a[left+i];
+	    //copy rem left side elements
+        
+        for(int i=left;i<=middle;i++,current++)
+          array[current]=a[i];
 	
 	}
 	

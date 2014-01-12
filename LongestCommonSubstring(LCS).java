@@ -1,6 +1,5 @@
 public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
 		String arr[]=new String[5];
 		arr[0]="aaaabbcdcc";
 		arr[1]="bcd";
@@ -10,18 +9,11 @@ public static void main(String[] args) {
 
 		String n=arr[0];
 		for(int i=0;i<5;i++)
-		{
-		n=Test.LongestCommonSubstring(arr[i],n);
-		
-		}
-		
+	    	n=Test.LongestCommonSubstring(arr[i],n);
+			
 		System.out.println(n);
 
 	}
-
-
-
-
 
 //brute force
  public static String LongestCommonSubstring(String S1, String S2) {

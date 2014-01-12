@@ -15,10 +15,11 @@ void InOrderTraversal(Node root)
 		Stack<Node> st=new Stack<Node>();
 		
 		Node n = root;
+		
 		while(n!=null)
 		{
-		n = n.getLeft();
 		st.push(n);
+		n = n.getLeft();
 		}
 		
 		
@@ -27,8 +28,7 @@ void InOrderTraversal(Node root)
 			Node m = st.pop(); 
 			System.out.println(m);
 			
-			if(m.getRight()!=null)
-				m=m.getRight();
+			m=m.getRight();
 			
 		    while(m!=null)
 			{

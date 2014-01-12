@@ -20,7 +20,7 @@ public class Test{
 	                  i++;
 	                  j--;
 	            }
-	      };
+	      }
 	 
 	      /* recursion */
 	      if (left < j)
