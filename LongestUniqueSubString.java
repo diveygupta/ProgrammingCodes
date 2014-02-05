@@ -1,7 +1,6 @@
 import java.util.*;
 
-//with recursion
-//node.value,node.left,node.right
+
 public class Test{
 
 	private static String LongestUniqueSubString(String str)

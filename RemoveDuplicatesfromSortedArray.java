@@ -16,8 +16,8 @@ public class Test{
 				else
 				{
 				rightIndex++;
-				arr[leftIndex+1]=arr[rightIndex];
 				leftIndex++;
+				arr[leftIndex]=arr[rightIndex];				
 				}
 			}
 					
@@ -25,7 +25,7 @@ public class Test{
 		leftIndex++;
 		while(leftIndex<arr.length)
 		{
-			arr[leftIndex]=0;
+			arr[leftIndex]=-1;
 			leftIndex++;
 		}
 	}

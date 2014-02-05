@@ -27,6 +27,7 @@ public class Test{
 			bigArray[b]=bigArray[i];
 			i--;b--;
 		}
+
 		
 		
 	}
