@@ -17,7 +17,7 @@ public class PostOrderTraversal {
         {
             n = s.peek(); 
             
-            if(n.left == root || n.right == root || (n.left != null && n.right != null) )
+            if(n.left == root || n.right == root || (n.left == null && n.right == null) )
             {
                 System.out.println(n.value);
                 s.pop();

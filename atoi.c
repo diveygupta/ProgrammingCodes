@@ -11,7 +11,7 @@ int myAtoi(char *str)
     }
      
     for (i=i; str[i] != '\0'; i++)
-        res = res*10 + str[i] - '0';
+        res = res*10 + (int)(str[i] - '0');
    
     return sign*res;
 }

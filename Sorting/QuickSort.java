@@ -29,15 +29,6 @@ public class Test{
 	    	  QuickSort(arr, i, right);
 	}
 
-
-
-
-	 
-	  
-	 
-	
-	
-	
 	public static void main(String[] args){
 
 		int[] arr={17,5,1,4,9,78,987,5,34};

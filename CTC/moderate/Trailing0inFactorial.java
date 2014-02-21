@@ -5,9 +5,11 @@ public class Trailing0inFactorial {
     //algo1  iteratte from 2 to n and find count no of 5's in every multiple of 5
     private static void Algo1find0(int n) {
         
+        if(n<5)
+            System.out.println("0");
         int temp,rem,count = 0;
         
-        for(int i=2; i<=n;i++)
+        for(int i=5; i<=n;i=i+5)
         {
             temp = i;
             rem = temp%5;
@@ -37,7 +39,7 @@ public class Trailing0inFactorial {
     
     public static void main(String[] args) {
         
-        Algo1find0(25);
-        Algo2find0(25);
+        Algo1find0(30);
+        Algo2find0(30);
     }
 }

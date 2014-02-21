@@ -26,3 +26,5 @@ public class Node {
 	   return right;
    }
 }
+
+//refer to BTFromArray.java for creation of BT from array
