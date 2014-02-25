@@ -1,5 +1,5 @@
 
-public class PrintTriangleInOn {
+public class PrintTriangleInOneLoop {
 
     
    public static void logic1(int n)

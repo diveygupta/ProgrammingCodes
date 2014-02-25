@@ -26,8 +26,9 @@ public void dfs()
 
 
 /////////////dfs for BT
-//dfs on a binary tree is the same one with preorder traversal 
-public void dfs2(Node root)
+//generally dfs for BT can be done in any of the traversal(inorder/preorder/postorder)
+//following dfs on a binary tree is the same one with preorder traversal 
+public void dfsForBT(Node root)
 {
 	//DFS uses Stack data structure
 	if(root == null)
