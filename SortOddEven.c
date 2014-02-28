@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 
-void quicksort(int *a,int count)
+void selectionsort(int *a,int count)
 {
   int i,j, min, temp;
              for (i = 0; i <count-1 ; ++i)
@@ -45,8 +45,8 @@ j=0;
 		}
 
 
-		quicksort(&odd[0],oddcount);
-		quicksort(&even[0],count-oddcount);
+		selectionsort(&odd[0],oddcount);
+		selectionsort(&even[0],count-oddcount);
           for (i = 0; i <oddcount ; ++i)
         	numbers[i]=odd[i];
         

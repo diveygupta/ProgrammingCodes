@@ -1,3 +1,15 @@
+ public void BFS_Recursive(Queue queue) {
+        // BFS uses Queue data structure
+        if (queue.isEmpty()) return;
+        Node node = (Node) queue.remove();
+        System.out.println(node);
+        visited.put(node, true);
+        for (Node child: node.child) {
+            queue.add(child);
+        }
+        BFS_Recursive(queue);
+    }
+
 public void BFS()
 {
 	
@@ -21,7 +33,7 @@ public void BFS()
 }
 
 
-//////////////algo for BT
+//////////////algo for Binary Tree(BT)
 	 public void BFS2()
 	 { 
 	 	Queue q = new LinkedList();

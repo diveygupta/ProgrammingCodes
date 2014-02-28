@@ -1,4 +1,19 @@
-public void dfs()
+public void DFS_Recursive(Stack stack) {
+        // DFS uses Stack data structure
+        if (stack.empty()) return;
+        Node node = (Node) stack.peek();
+        if (visited.get(node)==null) System.out.println(node);
+        visited.put(node, true);
+        Node child = getUnvisitedChildNode(node);
+        if (child != null) {
+            stack.push(child);
+        } else {
+            stack.pop();
+        }
+        DFS_Recursive(stack);
+    }
+
+public void DFS()
 {
 	//DFS uses Stack data structure
 	Stack s=new Stack();
