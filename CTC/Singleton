@@ -1,0 +1,21 @@
+ 
+public class Singleton {
+ 
+	private static Singleton instance = null;
+ 
+	protected Singleton() {
+	}
+ 
+	// Lazy Initialization (If required then only)
+	public static Singleton getInstance() {
+		if (instance == null) {
+			// Thread Safe. Might be costly operation in some case
+			synchronized (Singleton.class) {
+				if (instance == null) {
+					instance = new Singleton();
+				}
+			}
+		}
+		return instance;
+	}
+}
