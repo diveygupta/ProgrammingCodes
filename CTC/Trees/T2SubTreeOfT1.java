@@ -2,7 +2,7 @@
 public class T2SubTreeOfT1 {
 
     //algo1
-    //find Inorder of Preorder of T1 & T2
+    //find Inorder and Preorder of T1 & T2
     //if (Inorder of T2 isSubstring of T1) && (Preorder of T2 isSubstring of T1) then true
     
     //algo2
