@@ -12,4 +12,31 @@ public String ReverseString(String s)
 	}
 	return String.copyValueOf(charArray);
 }
+
+// in c
+void reverseString(char *str)
+{
+	if(NULL == str) 
+	{
+		return;
+	}
 	
+	int len = strlen(str);
+	for(int i = 0; i <len/2; i++)
+	{
+		char c = str[i];
+		str[i] = str[len-i-1];
+		str[len-i-1] = c;
+	}
+}
+
+// using XOR swap
+void reverseString(char *p)
+{
+  char *q = p;
+  while(q && *q) ++q;
+  for(--q; p < q; ++p, --q)
+    *p = *p ^ *q,
+    *q = *p ^ *q,
+    *p = *p ^ *q;
+}
