@@ -37,5 +37,7 @@ public static void main(String[] args) {
     }
 
 
-
+//another solution is to find string with the least length, then check any substring of it is present in all the remaining strings
+ 
+ 
 //suffix tree
