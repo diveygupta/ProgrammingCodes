@@ -30,7 +30,7 @@ void reverseString(char *str)
 	}
 }
 
-// using XOR swap
+// using XOR swap, a^a==0
 void reverseString(char *p)
 {
   char *q = p;

@@ -16,7 +16,7 @@ public class PostOrderTraversal {
         while(!s.isEmpty())
         {
             n = s.peek(); 
-            
+            // 			finished subtrees 		 or			is leaf
             if(n.left == root || n.right == root || (n.left == null && n.right == null) )
             {
                 System.out.println(n.value);

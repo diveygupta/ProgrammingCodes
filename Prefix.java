@@ -2,7 +2,7 @@ import java.util.Stack;
 import java.util.StringTokenizer;
 
 public class Prefix {
-    
+    // similar to postfix, just reverse the exprssion, small logic change too
   public static void main(String[] args) {
     
           String expression = "- * / 15 - 7 + 1 1 3 + 2 + 1 1"; //  // "* + 1 2 3"

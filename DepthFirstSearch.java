@@ -46,28 +46,23 @@ public void DFS()
 public void dfsForBT(Node root)
 {
 	//DFS uses Stack data structure
-	if(root == null)
-		return;
-	Stack s=new Stack();
-	s.push(root);
-	printNode(root);
-	while(!s.isEmpty())
+	if(root==null) return;
+	
+	Stack<Node> st=new Stack<Node>();
+	
+	st.push(root);
+	
+	while(!st.isEmpty())
 	{
-		Node n=(Node)s.peek();
-		if(n.right != null)
-		{
-			printNode(n.right);
-			s.push(n.right);
-		}
-		else if(n.left != null)
-		{
-			printNode(n.left);
-			s.push(n.left);
-		}
-		else
-		{
-			s.pop();
-		}
+		Node n=st.pop();
+		System.out.println(n.getValue());
+		if(root.getRight()!=null)
+		st.push(n.getRight());
+		if(root.getLeft()!=null)
+		st.push(n.getLeft());
+			
+		
 	}
+	
 	
 }
