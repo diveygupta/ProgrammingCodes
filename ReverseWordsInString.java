@@ -46,3 +46,53 @@ public class Test {
 
 
 }
+
+
+
+
+
+
+
+
+// c implementation
+
+#include <stdio.h>
+
+void reverse(char *start, char *end) {
+    while(start < end) {
+        char temp = *start;
+        *start = *end;
+        *end = temp;
+        start++;
+        end--;
+    }
+}
+
+void reverseString(char *str) {
+    char *start = str;
+    char *end = str;
+    while(*end) {
+        end++;
+        if(*end == '\0') {
+            reverse(start, end-1);    
+            break;
+        } else if(*end == ' ') {
+            reverse(start, end-1);
+            start = end+1;
+        } 
+    }
+    
+    reverse(str, end-1);
+}
+
+int main()
+{
+   // printf("Hello, World!\n");
+   // int i = 5;
+   // int *j = &i;
+    char str[] = "hello world";
+    reverseString(str);
+    printf("%s\n",str);
+    return 0;
+}
+

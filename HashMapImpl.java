@@ -58,6 +58,7 @@ public class MyMap<K, V> {
 	  }
 
 	  private void resize() {
+		  // use load factor
 	    if (size == values.length) {
 	      int newSize = values.length * 2;
 	      values = Arrays.copyOf(values, newSize);

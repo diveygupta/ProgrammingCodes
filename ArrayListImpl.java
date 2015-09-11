@@ -10,6 +10,7 @@ public class MyList<E> {
   }
 
   public void add(E e) {
+	  //use load factor
     if (size == elements.length) {
       resize();
     }  
